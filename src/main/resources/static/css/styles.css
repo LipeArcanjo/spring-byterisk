@@ -1,0 +1,28 @@
+/* Estilização global */
+
+/* Reset padrão do CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define fonte e fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+
+h2 {
+    text-align: center;
+    color: #444;
+}

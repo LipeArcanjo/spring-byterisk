@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Formulário Beneficiário</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" th:href="@{/css/beneficiario-form.css}" />
+    <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+    <link rel="stylesheet" th:href="@{/css/footer.css}" />
+</head>
+<body>
+
+<!-- Incluindo a Navbar -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<h2 th:text="${beneficiario.idBeneficiario != null ? 'Editar Beneficiário' : 'Novo Beneficiário'}"></h2>
+
+<form th:action="@{${beneficiario.idBeneficiario == null} ? '/view/beneficiarios/salvar' : '/view/beneficiarios/atualizar/' + ${beneficiario.idBeneficiario}}"
+      method="post" th:object="${beneficiario}">
+    <input type="hidden" th:field="*{idBeneficiario}" />
+
+    <label>Nome:</label>
+    <input type="text" th:field="*{nome}" required />
+
+    <label>CPF:</label>
+    <input type="text" th:field="*{cpf}" required />
+
+    <label>Telefone:</label>
+    <input type="text" th:field="*{telefone}" />
+
+    <label>Email:</label>
+    <input type="email" th:field="*{email}" />
+
+    <label>Endereço:</label>
+    <input type="text" th:field="*{endereco}" />
+
+    <label>Plano:</label>
+    <select th:field="*{idPlano}">
+        <option th:each="plano : ${planos}"
+                th:value="${plano.idPlano}"
+                th:text="${plano.nomePlano}">
+        </option>
+    </select>
+
+    <label>Data de nascimento:</label>
+    <input type="date" th:field="*{dataNascimento}" />
+
+    <button type="submit">Salvar</button>
+    <a href="/view/beneficiarios" class="action-btn cancel-btn">Cancelar</a>
+</form>
+
+<!-- Incluindo o Footer -->
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

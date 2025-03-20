@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"  # mapeia a porta 8080 do container para a porta 8080 da máquina host
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod  # ajuste conforme necessário

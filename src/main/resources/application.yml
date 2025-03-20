@@ -1,0 +1,24 @@
+spring:
+#  h2:
+#    console:
+ #     enabled: true
+    datasource:
+        url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
+        username: rm554018
+        password: 170404
+        driver-class-name: oracle.jdbc.OracleDriver
+    jpa:
+        hibernate:
+            ddl-auto: update
+
+        database-platform: org.hibernate.dialect.OracleDialect
+    thymeleaf:
+        enabled: true
+        prefix: classpath:/templates/
+        suffix: .html
+    mvc:
+        view:
+            prefix: classpath:/templates/
+            suffix: .html
+
+

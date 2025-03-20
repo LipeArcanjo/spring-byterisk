@@ -1,0 +1,47 @@
+/* Centraliza a página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container estilizado */
+.detail-container {
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+.detail-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Informações */
+.detail-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Botão de voltar */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}

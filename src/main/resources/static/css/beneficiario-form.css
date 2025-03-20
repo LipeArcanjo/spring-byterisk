@@ -1,0 +1,54 @@
+/* Estiliza o formulário */
+form {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+/* Campos */
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 1.5vh 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2vh;
+    background-color: #EE4B2B;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cancel-btn:hover {
+    background-color: #880808;
+}

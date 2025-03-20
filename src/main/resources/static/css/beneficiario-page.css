@@ -1,0 +1,64 @@
+/* Container centralizado */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Botões */
+.action-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.view-btn {
+    background-color: #17a2b8;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+/* Botão de adicionar novo beneficiário */
+.add-btn {
+    background-color: #28a745;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 3vh 0;
+    width: 100%;
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+}

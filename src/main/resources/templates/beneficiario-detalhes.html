@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalhes Beneficiário</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" th:href="@{/css/beneficiario-detalhes.css}" />
+    <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+    <link rel="stylesheet" th:href="@{/css/footer.css}" />
+</head>
+<body>
+
+<main class="detail-container">
+    <h2>Detalhes do Beneficiário</h2>
+
+    <p><strong>ID:</strong> <span th:text="${beneficiario.idBeneficiario}"></span></p>
+    <p><strong>Nome:</strong> <span th:text="${beneficiario.nome}"></span></p>
+    <p><strong>CPF:</strong> <span th:text="${beneficiario.cpf}"></span></p>
+    <p><strong>Telefone:</strong> <span th:text="${beneficiario.telefone}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${beneficiario.email}"></span></p>
+    <p><strong>Endereço:</strong> <span th:text="${beneficiario.endereco}"></span></p>
+    <p><strong>Plano:</strong> <span th:text="${beneficiario.nomePlano}"></span></p>
+
+    <a href="/view/beneficiarios" class="back-btn">Voltar</a>
+</main>
+
+</body>
+</html>
